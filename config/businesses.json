@@ -2,13 +2,19 @@
   "bar-luna": {
     "name": "Bar Luna",
     "googleReviewUrl": "https://g.page/r/tu-link-de-google/review",
-    "thankYouLow": "Gracias por contarnoslo. Lo revisaremos en privado para mejorar.",
-    "thankYouHigh": "Gracias. Tu opinion nos ayuda muchisimo."
+    "thankYouLow": "Gracias por contactarnos. Lo revisaremos en privado para mejorar.",
+    "thankYouHigh": "Gracias. Tu opinión nos ayuda muchísimo."
   },
   "peluqueria-nova": {
-    "name": "Peluqueria Nova",
+    "name": "Peluquería Nova",
     "googleReviewUrl": "https://g.page/r/tu-link-de-google/review",
-    "thankYouLow": "Gracias por tu sinceridad. Queremos mejorar tu proxima visita.",
+    "thankYouLow": "Gracias por tu sinceridad. Queremos mejorar tu próxima visita.",
     "thankYouHigh": "Gracias por confiar en nosotros. Puedes compartir tu experiencia en Google."
+  },
+  "valdhierro": {
+    "name": "Vald’hierro",
+    "googleReviewUrl": "https://search.google.com/local/writereview?placeid=ChIJv6p3Zp2QWQ0R7rjQk0w9V6Q",
+    "thankYouLow": "Gracias por tu opinión. Queremos mejorar tu experiencia.",
+    "thankYouHigh": "¡Gracias! ¿Te importaría dejarnos una reseña en Google?"
   }
 }

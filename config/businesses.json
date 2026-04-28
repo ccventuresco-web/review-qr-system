@@ -1,0 +1,14 @@
+{
+  "bar-luna": {
+    "name": "Bar Luna",
+    "googleReviewUrl": "https://g.page/r/tu-link-de-google/review",
+    "thankYouLow": "Gracias por contarnoslo. Lo revisaremos en privado para mejorar.",
+    "thankYouHigh": "Gracias. Tu opinion nos ayuda muchisimo."
+  },
+  "peluqueria-nova": {
+    "name": "Peluqueria Nova",
+    "googleReviewUrl": "https://g.page/r/tu-link-de-google/review",
+    "thankYouLow": "Gracias por tu sinceridad. Queremos mejorar tu proxima visita.",
+    "thankYouHigh": "Gracias por confiar en nosotros. Puedes compartir tu experiencia en Google."
+  }
+}

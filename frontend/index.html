@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Resena rapida</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="review-panel" aria-live="polite">
+        <p class="eyebrow">Tu opinion importa</p>
+        <h1 id="businessName">Cargando...</h1>
+        <p class="question">¿Cómo ha sido tu experiencia?</p>
+
+        <form id="reviewForm" class="form">
+          <fieldset class="stars" aria-label="Valoracion de 1 a 5 estrellas">
+            <input type="radio" id="star5" name="rating" value="5" />
+            <label for="star5" title="5 estrellas">★</label>
+            <input type="radio" id="star4" name="rating" value="4" />
+            <label for="star4" title="4 estrellas">★</label>
+            <input type="radio" id="star3" name="rating" value="3" />
+            <label for="star3" title="3 estrellas">★</label>
+            <input type="radio" id="star2" name="rating" value="2" />
+            <label for="star2" title="2 estrellas">★</label>
+            <input type="radio" id="star1" name="rating" value="1" />
+            <label for="star1" title="1 estrella">★</label>
+          </fieldset>
+
+          <label class="comment-label" for="comment">Comentario opcional</label>
+          <textarea
+            id="comment"
+            name="comment"
+            rows="5"
+            maxlength="1000"
+            placeholder="Cuéntanos qué podemos mejorar o qué te ha gustado"
+          ></textarea>
+
+          <button id="submitButton" type="submit">Enviar</button>
+          <p id="statusMessage" class="status" role="status"></p>
+        </form>
+      </section>
+    </main>
+
+    <script src="/app.js"></script>
+  </body>
+</html>

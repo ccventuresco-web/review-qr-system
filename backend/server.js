@@ -119,7 +119,20 @@ app.post("/api/reviews", async (req, res, next) => {
 app.get(["/", "/r/:businessId"], (req, res) => {
   res.sendFile(path.join(frontendPath, "index.html"));
 });
+app.get("/:id", (req, res) => {
+  const business = getBusinessOrNull(req.params.id);
 
+  if (!business) {
+    return res.send("Negocio no configurado");
+  }
+
+  res.send(`
+    <h1>${business.name}</h1>
+    <a href="${business.googleReviewUrl}" target="_blank">
+      Dejar reseña en Google
+    </a>
+  `);
+});
 app.use((error, req, res, next) => {
   console.error(error);
   res.status(500).json({

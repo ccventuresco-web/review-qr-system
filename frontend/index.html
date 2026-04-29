@@ -13,7 +13,7 @@
         <h1 id="businessName">Cargando...</h1>
         <p class="question">¿Cómo ha sido tu experiencia?</p>
 
-        <form id="reviewForm" class="form">
+        <form id="reviewForm" class="form" action="/api/reviews" method="POST">
           <fieldset class="stars" aria-label="Valoracion de 1 a 5 estrellas">
             <input type="radio" id="star5" name="rating" value="5" />
             <label for="star5" title="5 estrellas">★</label>
@@ -36,8 +36,8 @@
             placeholder="Cuéntanos qué podemos mejorar o qué te ha gustado"
           ></textarea>
 
+         <input type="hidden" name="businessId" value="valdhierro">
           <button id="submitButton" type="submit">Enviar</button>
-          <p id="statusMessage" class="status" role="status"></p>
         </form>
       </section>
     </main>

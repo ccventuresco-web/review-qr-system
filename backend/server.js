@@ -113,7 +113,7 @@ res.json({
   storage: saved.storage,
   privateFeedback: true,
   message: business.thankYouLow
-});
+
 });
   });
   } catch (error) {

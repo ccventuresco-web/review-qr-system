@@ -104,13 +104,18 @@ app.post("/api/reviews", async (req, res, next) => {
     const saved = await saveReview(row);
     const shouldRedirectToGoogle = numericRating >= 4 && business.googleReviewUrl;
 
-    res.json({
-      ok: true,
-      storage: saved.storage,
-      privateFeedback: numericRating <= 3,
-      message: numericRating >= 4 ? business.thankYouHigh : business.thankYouLow,
-      redirectUrl: shouldRedirectToGoogle ? business.googleReviewUrl : null
-    });
+ if (shouldRedirectToGoogle) {
+  return res.redirect(business.googleReviewUrl);
+}
+
+res.json({
+  ok: true,
+  storage: saved.storage,
+  privateFeedback: true,
+  message: business.thankYouLow
+});
+});
+  });
   } catch (error) {
     next(error);
   }

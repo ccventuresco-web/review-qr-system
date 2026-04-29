@@ -132,10 +132,19 @@ app.get("/:id", (req, res) => {
   }
 
   res.send(`
-    <h1>${business.name}</h1>
-    <a href="${business.googleReviewUrl}" target="_blank">
-      Dejar reseña en Google
-    </a>
+  <h1>${business.name}</h1>
+  <p>¿Cómo fue tu experiencia?</p>
+
+  <form action="/api/reviews" method="POST">
+    <input type="hidden" name="businessId" value="${req.params.id}" />
+
+    <button type="submit" name="rating" value="5">⭐⭐⭐⭐⭐</button>
+    <button type="submit" name="rating" value="4">⭐⭐⭐⭐</button>
+    <button type="submit" name="rating" value="3">⭐⭐⭐</button>
+    <button type="submit" name="rating" value="2">⭐⭐</button>
+    <button type="submit" name="rating" value="1">⭐</button>
+  </form>
+`);
   `);
 });
 app.use((error, req, res, next) => {
